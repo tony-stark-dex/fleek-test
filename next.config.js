@@ -5,5 +5,9 @@ const nextConfig = {
 
 module.exports = {
   trailingSlash: true,
-  nextConfig,
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+    }
+  },
 }
